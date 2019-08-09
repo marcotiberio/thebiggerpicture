@@ -26,8 +26,8 @@
 
   <header>
     <div style="padding: 0.5%;">
-      <button class="show" onclick="function001()">Show</button>
-      <button class="hide" onclick="function002()">Hide</button>
+      <button class="show" onclick="show()">Show</button>
+      <button class="hide" onclick="hide()">Hide</button>
     </div>
     <div class="about">
       <div></div>
@@ -61,13 +61,13 @@
   	}
   }, false);
 
-    function function001() {
+    function show() {
       document.getElementById("image").style.height = "300%";
       document.getElementById("image").style.top = "-200%";
       document.getElementById("image").style.left = "-60%";
     }
 
-    function function002() {
+    function hide() {
       document.getElementById("image").style.height = "100%";
       document.getElementById("image").style.top = "0";
       document.getElementById("image").style.left = "0";
