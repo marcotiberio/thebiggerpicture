@@ -27,7 +27,7 @@
   <header>
     <div style="padding: 0.5%;">
       <button class="show" onclick="function001()">Show</button>
-      <button class="hide">Hide</button>
+      <button class="hide" onclick="function002()">Hide</button>
     </div>
     <div class="about">
       <div></div>
@@ -39,8 +39,8 @@
     <div class="main-image">
       <img id="image" src="assets/test-image1.jpg" alt="">
     </div>
-    <div class="main-text" id="elem" hidden>
-      <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <div class="main-text">
+      <div class="text" id="elem" hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
@@ -61,11 +61,17 @@
   	}
   }, false);
 
-    // function function001() {
-    //   document.getElementById("image").style.height = "300%";
-    //   document.getElementById("image").style.top = "-200%";
-    //   document.getElementById("image").style.left = "-60%";
-    // }
+    function function001() {
+      document.getElementById("image").style.height = "300%";
+      document.getElementById("image").style.top = "-200%";
+      document.getElementById("image").style.left = "-60%";
+    }
+
+    function function002() {
+      document.getElementById("image").style.height = "100%";
+      document.getElementById("image").style.top = "0";
+      document.getElementById("image").style.left = "0";
+    }
 
   </script>
 
