@@ -49,10 +49,10 @@ header {
   left: 0;
   height: 100%;
   z-index: 100;
-  -webkit-transition: all 2s linear;
-  -moz-transition: all 2s linear;
-  -o-transition: all 2s linear;
-  transition: all 2s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 #image-focus {
@@ -61,10 +61,10 @@ header {
   bottom: 6%;
   left: 26.5%;
   z-index: 1000;
-  -webkit-transition: all 2s linear;
-  -moz-transition: all 2s linear;
-  -o-transition: all 2s linear;
-  transition: all 2s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .main-text {
@@ -80,12 +80,21 @@ header {
 }
 
 .text {
+  font-size: 22px;
 }
 
 #image-focus:hover + #image {
-  filter: grayscale(100%);
+  filter: brightness(30%);
 }
 
 .hide {
   z-index: 3000;
+}
+
+#about-button:hover {
+  text-decoration: underline;
+}
+
+#archive-button:hover {
+  text-decoration: underline;
 }
