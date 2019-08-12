@@ -23,7 +23,7 @@ header {
 
 .about {
   cursor: pointer;
-  padding: 2%;
+  padding: 4%;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -80,7 +80,8 @@ header {
 }
 
 .text {
-  font-size: 22px;
+  padding: 10% 1%;
+  font-size: 24px;
 }
 
 #image-focus:hover + #image {
