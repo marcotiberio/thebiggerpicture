@@ -14,7 +14,7 @@ header {
   width: 100vw;
   padding: 0;
   position: absolute;
-  z-index: 1000;
+  z-index: 3000;
 
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -42,13 +42,17 @@ header {
 .main-image {
   height: 100%;
   width: 100%;
+
+  /* background-image: url("assets/test-image1.jpg");
+  height: 100vh;
+  background-size: cover; */
 }
 
 #image {
   position: absolute;
+  height: 100%;
   top: 0;
   left: 0;
-  height: 100%;
   z-index: 100;
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
@@ -58,9 +62,9 @@ header {
 
 #image-focus {
   position: absolute;
-  height: 25%;
-  bottom: 42px;
-  left: 406px;
+  height: 100%;
+  top: 0;
+  left: 0;
   z-index: 1000;
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
@@ -80,7 +84,7 @@ header {
 
   color: white;
 
-  z-index: 101;
+  z-index: 2000;
 }
 
 .text {
