@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="#">
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_github.css">
     <!-- <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
   	<link rel="stylesheet" type="text/css" href="examples.css" /> -->
 
@@ -31,8 +31,8 @@
       <!-- <button>Hide</button> -->
     </div>
     <div class="about">
-      <div id="archive-button">archive</div>
-      <div class="hide" id="about-button" onclick="hide()" style="text-align: right;">about</div>
+      <div id="archive-button" style="text-align: right;">archive</div>
+      <div class="hide" id="about-button" style="text-align: right;">about</div>
     </div>
   </header>
 
@@ -42,7 +42,9 @@
       <img id="image" src="assets/test-image1.jpg" alt="">
     </div>
     <div class="main-text">
-      <div class="text" id="elem" style="bottom: 0;" hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      <div class="text" id="elem" style="bottom: 0;" hidden>
+      <h1 class="hide" onclick="hide()" style="pointer: cursor;">&times;</h1>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
@@ -62,23 +64,23 @@
   	}
   }, false);
 
-    function show() {
-      document.getElementById("image").style.height = "300%";
-      document.getElementById("image").style.top = "-200%";
-      document.getElementById("image").style.left = "-60%";
-      document.getElementById("image-focus").style.height = "75%";
-      document.getElementById("image-focus").style.bottom = "17%";
-      document.getElementById("image-focus").style.left = "19%";
-    }
 
-    function hide() {
-      document.getElementById("image").style.height = "100%";
-      document.getElementById("image").style.top = "0";
-      document.getElementById("image").style.left = "0";
-      document.getElementById("image-focus").style.height = "25%";
-      document.getElementById("image-focus").style.bottom = "6%";
-      document.getElementById("image-focus").style.left = "26.5%";
-    }
+  function show() {
+    document.getElementById("image").style.height = "300%";
+    document.getElementById("image").style.top = "-200%";
+    document.getElementById("image").style.left = "-60%";
+    document.getElementById("image-focus").style.height = "75%";
+    document.getElementById("image-focus").style.bottom = "130px";
+    document.getElementById("image-focus").style.left = "250px";
+  }
+  function hide() {
+    document.getElementById("image").style.height = "100%";
+    document.getElementById("image").style.top = "0";
+    document.getElementById("image").style.left = "0";
+    document.getElementById("image-focus").style.height = "25%";
+    document.getElementById("image-focus").style.bottom = "42px";
+    document.getElementById("image-focus").style.left = "406px";
+  }
   </script>
 
 
