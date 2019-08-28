@@ -21,7 +21,7 @@ h1 {
 }
 
 .loader-text {
-  animation: blinker 3s linear infinite;
+  animation: blinker 2s linear infinite;
 }
 
 @keyframes blinker {
