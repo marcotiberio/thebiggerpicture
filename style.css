@@ -125,6 +125,7 @@ svg:hover + img {
 
 .hide {
   z-index: 3000;
+  padding: 0;
 }
 
 .hide:hover {
