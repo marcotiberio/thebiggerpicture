@@ -41,14 +41,14 @@
   <section class="main-container">
     <div class="main-image">
       <img id="image-focus" src="assets/pettorina111.png" alt="">
-      <svg id="svg" width="20%" height="25%" style="position: absolute; bottom: 4%; left: 28%; z-index: 3000;">
-        <rect class="show" id="circle" x="0" y="0" width="100%" height="90%" stroke="green" stroke-width="0" fill="transparent" onclick="show()"  />
+      <svg id="svg" width="20%" height="25%" style="position: absolute; bottom: 4%; left: 28%; z-index: 3003;">
+        <rect class="show" id="rect" x="0" y="0" width="90%" height="90%" stroke="green" stroke-width="0" fill="transparent" onclick="show()"  />
       </svg>
       <img id="image" src="assets/test-image1.jpg" alt="">
     </div>
     <div class="main-text">
       <div class="text" id="elem" style="bottom: 0;" hidden>
-        <h1 class="hide" onclick="hide()">&times;</h1>
+        <h1 class="hide" id="hidden-text" onclick="hide()">&times;</h1>
         <p>Since the 2000s, track and field athletes at major competitions wear
           their names as well as their numbers on their bibs. Powerlifters wear a
           bib benchpress shirt across their chest area to help them lift more weight.
@@ -57,7 +57,7 @@
         </p>
       </div>
       <div class="text" id="elem-about" style="bottom: 0; font-size: 120%;" hidden>
-        <p style="width: 70%; float: right;">The Bigger Picture is the photography blog where you will enjoy big photos,
+        <p style="float: right;">The Bigger Picture is the photography blog where you will enjoy big photos,
         like you rarely find on the Web, and also learn more about their contexts by
         zooming in on selected details of the photos and read curious information,
         facts, anecdotes about them.
@@ -76,6 +76,8 @@
       </div>
     </div>
   </section>
+
+  <script src="index.js"></script>
 
   <script>
 
@@ -98,13 +100,14 @@
     document.getElementById("image-focus").style.height = "300%";
     document.getElementById("image-focus").style.top = "-200%";
     document.getElementById("image-focus").style.left = "-65%";
-    document.getElementById("svg").style.bottom = "5%";
-    document.getElementById("svg").style.left = "18%";
-    document.getElementById("svg").style.width = "550";
-    document.getElementById("svg").style.height = "550";
-    document.getElementById("circle").style.cx = "220";
-    document.getElementById("circle").style.cy = "220";
-    document.getElementById("circle").style.r = "220";
+    document.getElementById("svg").style.bottom = "0";
+    document.getElementById("svg").style.left = "0";
+    document.getElementById("svg").style.width = "100%";
+    document.getElementById("svg").style.height = "100%";
+    document.getElementById("rect").style.x = "0";
+    document.getElementById("rect").style.y = "0";
+    document.getElementById("rect").style.width = "200%";
+    document.getElementById("rect").style.height = "100%";
   }
   function hide() {
     document.getElementById("image").style.height = "100%";
@@ -113,13 +116,14 @@
     document.getElementById("image-focus").style.height = "100%";
     document.getElementById("image-focus").style.top = "0";
     document.getElementById("image-focus").style.left = "0";
-    document.getElementById("svg").style.bottom = "1%";
-    document.getElementById("svg").style.left = "25%";
-    document.getElementById("svg").style.width = "200";
-    document.getElementById("svg").style.height = "200";
-    document.getElementById("circle").style.cx = "80";
-    document.getElementById("circle").style.cy = "80";
-    document.getElementById("circle").style.r = "80";
+    document.getElementById("svg").style.bottom = "4%";
+    document.getElementById("svg").style.left = "28%";
+    document.getElementById("svg").style.width = "20%";
+    document.getElementById("svg").style.height = "25%";
+    document.getElementById("rect").style.x = "0";
+    document.getElementById("rect").style.y = "0";
+    document.getElementById("rect").style.width = "90%";
+    document.getElementById("rect").style.height = "90%";
   }
 
   $(document).ready(function(){

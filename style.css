@@ -58,7 +58,7 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 3001;
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
   -o-transition: all 1s linear;
@@ -70,7 +70,7 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 3002;
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
   -o-transition: all 1s linear;
@@ -79,9 +79,9 @@ header {
 
 .main-text {
   position: relative;
-  background-color: black;
+  background-color: transparent;
 
-  height: 100vh;
+  /* height: 100vh; */
 
   display: grid;
   grid-template-columns: 1fr;
@@ -90,7 +90,7 @@ header {
   color: white;
   text-shadow: 3px 3px black;
 
-  z-index: 2000;
+  z-index: 3004;
 }
 
 .text {
@@ -102,6 +102,10 @@ header {
 
 svg:hover + img {
   filter: brightness(30%);
+}
+
+#rect:hover {
+  cursor: pointer;
 }
 
 .hide {
