@@ -20,7 +20,22 @@ h1 {
   padding-top: 8%;
 }
 
+#loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  z-index: 5000;
+}
+
 .loader-text {
+  font-size: 13em;
   animation: blinker 1s linear infinite;
 }
 
