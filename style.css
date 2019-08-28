@@ -41,6 +41,18 @@ header {
   color: white;
 }
 
+footer {
+  width: 100vw;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 3000;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  color: white;
+}
+
 .about {
   cursor: pointer;
   padding: 4%;
@@ -142,4 +154,9 @@ svg:hover + img {
 
 #archive-button:hover {
   text-decoration: underline;
+}
+
+#caption-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

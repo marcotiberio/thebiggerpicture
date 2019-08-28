@@ -29,9 +29,9 @@
 
 <body>
 
-  <div id="loader" style="z-index: 5000; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: black; color: white; text-align: center;">
+  <!-- <div id="loader" style="z-index: 5000; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: black; color: white; text-align: center;">
     <h1 class="loader-text" style="font-size: 15em;">THE BIGGER<br>PICTURE</h1>
-  </div>
+  </div> -->
 
   <header>
     <div style="padding: 0.5%;">
@@ -63,7 +63,7 @@
         </p>
       </div>
       <div class="text" id="elem-about" style="bottom: 0; font-size: 120%;" hidden>
-        <p style="float: right;">The Bigger Picture is the photography blog where you will enjoy big photos,
+        <p style="float: right; background-color: black;">The Bigger Picture is the photography blog where you will enjoy big photos,
         like you rarely find on the Web, and learn more about their contexts by
         zooming in on selected details of the photos and read curious information,
         facts, anecdotes about them.
@@ -79,8 +79,26 @@
         Curated by Mauro Bedoni, website developed by Defrost Studio.
       </p>
       </div>
+      <div class="text" id="elem-caption" style="bottom: 0; font-size: 90%;" hidden>
+        <p class="hide" id="hide-caption">&times;</p>
+        <p style="float: right; background-color: black;">
+          4×400 m relay race runners at the Track and Field Championship, Atlanta (USA), July 1st, 2018.
+          <br>
+          @ Paul Sandford/IAAF
+        </p>
+      </div>
     </div>
   </section>
+
+  <footer>
+    <div>
+      <!-- <button>Show</button> -->
+      <!-- <button>Hide</button> -->
+    </div>
+    <div class="caption" style="padding: 2% 4%;">
+      <div class="show-caption" id="caption-button" style="text-align: right;">caption</div>
+    </div>
+  </footer>
 
   <script src="index.js"></script>
 
@@ -137,14 +155,23 @@
     });
   });
 
-  $(function() {
-      // setTimeout() function will be fired after page is loaded
-      // it will wait for 5 sec. and then will fire
-      // $("#successMessage").hide() function
-      setTimeout(function() {
-          $("#loader").fadeOut()
-      }, 3000);
+  $(document).ready(function(){
+    $("#caption-button").click(function(){
+      $("#elem-caption").show();
+    });
+    $("#hide-caption").click(function(){
+      $("#elem-caption").hide();
+    });
   });
+
+  // $(function() {
+  //     // setTimeout() function will be fired after page is loaded
+  //     // it will wait for 5 sec. and then will fire
+  //     // $("#successMessage").hide() function
+  //     setTimeout(function() {
+  //         $("#loader").fadeOut()
+  //     }, 3000);
+  // });
 
   </script>
 
