@@ -21,11 +21,11 @@ h1 {
 }
 
 .loader-text {
-  animation: blinker 2s linear infinite;
+  animation: blinker 1s linear infinite;
 }
 
 @keyframes blinker {
-  100% {
+  50% {
     opacity: 0;
   }
 }
