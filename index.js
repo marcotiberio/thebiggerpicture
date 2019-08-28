@@ -6,6 +6,6 @@ jQuery(document).ready(function() {
 });
 
 function delayShow() {
-  var secs = 1000;
+  var secs = 5000;
   setTimeout('jQuery("body").css("visibility","visible");', secs);
 }
