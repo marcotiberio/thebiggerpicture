@@ -107,13 +107,11 @@
   <script src="index.js"></script>
 
   <script>
-    $(document).ready(function() {
-    var f = document.getElementById('image');
-    setInterval(function() {
-        f.style.display = (f.style.display == 'none' ? '' : 'none');
-    }, 300); 
-    
-});
+    function blink_text() {
+        $('#image').fadeOut(500);
+        $('#image').fadeIn(500);
+    }
+    setInterval(blink_text, 1000);
 
   // Show text
   var elem = document.querySelector('#elem');
