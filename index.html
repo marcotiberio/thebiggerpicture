@@ -40,9 +40,10 @@
       <!-- <button>Show</button> -->
       <!-- <button>Hide</button> -->
     </div>
-    <div class="about">
+    <div class="about" id="about-menu">
       <div id="archive-button" style="text-align: right;">archive (coming soon)</div>
       <div class="show-about" id="about-button" style="text-align: right;">about</div>
+      <div class="show-caption" id="caption-button" style="text-align: right;">caption</div>
     </div>
   </header>
 
@@ -74,10 +75,10 @@
         The Bigger Picture plays with the relationship between the picture and its bigger picture, and wants to make you stay more on a picture, engage with it, think about it.
         <br><br>
         Curated by Mauro Bedoni, website developed by Defrost Studio.
-      </p>
+        </p>
       </div>
-      <div class="text" id="elem-caption" style="bottom: 0; font-size: 90%;" hidden>
-        <p class="hide" id="hide-caption">&times;</p>
+      <div class="text" id="elem-caption" style="bottom: 0; font-size: 100%;" hidden>
+        <!-- <p class="hide" id="hide-caption">&times;</p> -->
         <p style="float: right;">
           4×400 m relay race runners at the Track and Field Championship, Atlanta (USA), July 1st, 2018.
           <br>
@@ -92,9 +93,9 @@
       <!-- <button>Show</button> -->
       <!-- <button>Hide</button> -->
     </div>
-    <div class="caption" style="padding: 2% 4%;">
+    <!-- <div class="caption" style="padding: 2% 4%;">
       <div class="show-caption" id="caption-button" style="text-align: right;">caption</div>
-    </div>
+    </div> -->
   </footer>
 
   <script src="index.js"></script>
@@ -159,15 +160,14 @@
   $(document).ready(function(){
     $("#about-button").click(function(){
       $("#elem-about").toggle();
+      $("#elem-caption").hide();
     });
   });
 
   $(document).ready(function(){
     $("#caption-button").click(function(){
-      $("#elem-caption").show();
-    });
-    $("#hide-caption").click(function(){
-      $("#elem-caption").hide();
+      $("#elem-caption").toggle();
+      $("#elem-about").hide();
     });
   });
 
