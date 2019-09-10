@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Bigger Picture</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+  	<link rel="stylesheet" type="text/css" href="examples.css" /> -->
+
+    <!-- TYPOGRAPHY -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41ebb0a60a.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+
+  </head>
+
+
+<body>
+
+  <div id="loader">
+    <div class="loader-text">
+    <h1>
+    The Bigger Picture
+    </h1>
+    Explore the image and find the details hidden in it. Each of these details will tell you something more about this picture.
+    <br><br>
+    Enjoy!
+    </div>
+  </div>
+
+  <header>
+    <div style="padding: 0.5%;">
+      <!-- <button>Show</button> -->
+      <!-- <button>Hide</button> -->
+    </div>
+    <div class="about" id="about-menu">
+      <div id="archive-button" style="text-align: right;">archive (coming soon)</div>
+      <div class="show-about" id="about-button" style="text-align: right;">about</div>
+      <div class="show-caption" id="caption-button" style="text-align: right;">caption</div>
+    </div>
+  </header>
+
+  <section class="main-container">
+    <div class="main-image">
+      <img id="image-focus1" src="assets/pettorina111.png" alt="">
+      <!-- <img id="image-focus2" src="assets/testimone.png" alt=""> -->
+      <svg id="svg1" width="20%" height="25%" style="position: absolute; bottom: 4%; left: 28%; z-index: 3004;">
+        <rect class="show" id="rect" x="0" y="0" width="90%" height="90%" stroke="green" stroke-width="0" fill="transparent" onclick="show1()"  />
+      </svg>
+      <img id="image" src="assets/test-image1.jpg" alt="">
+      <div id="opacity"></div>
+    </div>
+    <div class="main-text">
+      <div class="text" id="elem" style="bottom: 0;" hidden>
+        <h1 class="hide" id="hidden-text" onclick="hide1()">&times;</h1>
+        <p>Since the 2000s, track and field athletes at major competitions wear
+          their names as well as their numbers on their bibs. Powerlifters wear a
+          bib benchpress shirt across their chest area to help them lift more weight.
+          In Netball, bibs are used by the umpire to identify players' positions so
+          it can be determined who is within their allowed area.
+        </p>
+      </div>
+      <div class="text" id="elem-about" style="bottom: 0; font-size: 130%;" hidden>
+        <p style="float: right;"><i>“We never approach an image with a blank mind but with a mind already primed with memories, knowledge, prejudices.”</i>
+        <br>John A. Walker
+        <br><br>
+        The Bigger Picture is the photography blog where you can enjoy big photos, like you rarely find on the Web, and learn more about their contexts by zooming in on selected details of the photos and read facts, curious information, anecdotes about them.
+        The Bigger Picture plays with the relationship between the picture and its bigger picture, and wants to make you stay more on a picture, engage with it, think about it.
+        <br><br>
+        Curated by Mauro Bedoni, website developed by Defrost Studio.
+        </p>
+      </div>
+      <div class="text" id="elem-caption" style="bottom: 0; font-size: 100%;" hidden>
+        <!-- <p class="hide" id="hide-caption">&times;</p> -->
+        <p style="float: right;">
+          4×400 m relay race runners at the Track and Field Championship, Atlanta (USA), July 1st, 2018.
+          <br>
+          @ Paul Sandford/IAAF
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <!-- <button>Show</button> -->
+      <!-- <button>Hide</button> -->
+    </div>
+    <!-- <div class="caption" style="padding: 2% 4%;">
+      <div class="show-caption" id="caption-button" style="text-align: right;">caption</div>
+    </div> -->
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="typewriter.js"></script>
+
+  <script>
+
+
+  // Show text
+  var elem = document.querySelector('#elem');
+  document.addEventListener('click', function (event) {
+  	if (event.target.matches('.show')) {
+  		elem.removeAttribute('hidden');
+  	}
+  	if (event.target.matches('.hide')) {
+  		elem.setAttribute('hidden', 'true');
+  	}
+  }, false);
+
+
+  function show1() {
+    document.getElementById("image").style.height = "300%";
+    document.getElementById("image").style.top = "-200%";
+    document.getElementById("image").style.left = "-65%";
+    document.getElementById("image").style.filter = "brightness(20%)";
+    document.getElementById("image-focus1").style.height = "300%";
+    document.getElementById("image-focus1").style.top = "-200%";
+    document.getElementById("image-focus1").style.left = "-65%";
+    document.getElementById("image-focus2").style.height = "300%";
+    document.getElementById("image-focus2").style.top = "-200%";
+    document.getElementById("image-focus2").style.left = "-65%";
+    document.getElementById("svg1").style.bottom = "0";
+    document.getElementById("svg1").style.left = "0";
+    document.getElementById("svg1").style.width = "100%";
+    document.getElementById("svg1").style.height = "100%";
+    document.getElementById("rect").style.x = "0";
+    document.getElementById("rect").style.y = "0";
+    document.getElementById("rect").style.width = "200%";
+    document.getElementById("rect").style.height = "100%";
+  }
+  function hide1() {
+    document.getElementById("image").style.height = "100%";
+    document.getElementById("image").style.top = "0";
+    document.getElementById("image").style.left = "0";
+    document.getElementById("image").style.filter = "brightness(100%)";
+    document.getElementById("image-focus1").style.height = "100%";
+    document.getElementById("image-focus1").style.top = "0";
+    document.getElementById("image-focus1").style.left = "0";
+    document.getElementById("image-focus2").style.height = "100%";
+    document.getElementById("image-focus2").style.top = "0";
+    document.getElementById("image-focus2").style.left = "0";
+    document.getElementById("svg1").style.bottom = "4%";
+    document.getElementById("svg1").style.left = "28%";
+    document.getElementById("svg1").style.width = "20%";
+    document.getElementById("svg1").style.height = "25%";
+    document.getElementById("rect").style.x = "0";
+    document.getElementById("rect").style.y = "0";
+    document.getElementById("rect").style.width = "90%";
+    document.getElementById("rect").style.height = "90%";
+  }
+
+
+  $(document).ready(function(){
+    $("#about-button").click(function(){
+      $("#elem-about").toggle();
+      $("#elem-caption").hide();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#caption-button").click(function(){
+      $("#elem-caption").toggle();
+      $("#elem-about").hide();
+    });
+  });
+
+  $(function() {
+      // setTimeout() function will be fired after page is loaded
+      // it will wait for 5 sec. and then will fire
+      // $("#successMessage").hide() function
+      setTimeout(function() {
+          $("#loader").fadeOut()
+      }, 20000);
+  });
+
+  </script>
+
+
+</body>
+
+</html>
