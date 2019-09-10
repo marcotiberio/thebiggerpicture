@@ -51,7 +51,7 @@ header {
   width: 100vw;
   padding: 0;
   position: absolute;
-  z-index: 3003;
+  z-index: 3004;
 
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -63,7 +63,7 @@ footer {
   padding: 0;
   position: absolute;
   bottom: 0;
-  z-index: 3000;
+  z-index: 3004;
 
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -103,10 +103,10 @@ footer {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 3002;
+  z-index: 3001;
 
   background-color: rgba(0, 0, 0, 0.8);
-
+  
   /* animation-name: blinker;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -128,7 +128,7 @@ footer {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 3001;
+  z-index: 3000;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
@@ -140,7 +140,7 @@ footer {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 3003;
+  z-index: 3002;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
@@ -218,6 +218,10 @@ svg:hover + img {
 
 #archive-button:hover {
   text-decoration: underline;
+}
+
+.caption {
+  z-index: 3006;
 }
 
 #caption-button:hover {
