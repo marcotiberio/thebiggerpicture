@@ -31,9 +31,9 @@
 
 <body>
 
-  <!--<div id="loader">
+  <div id="loader">
     <h1 class="loader-text">THE BIGGER<br>PICTURE</h1>
-  </div>-->
+  </div>
 
   <header>
     <div style="padding: 0.5%;">
@@ -51,14 +51,14 @@
       <img id="image-focus1" src="assets/pettorina111.png" alt="">
       <!-- <img id="image-focus2" src="assets/testimone.png" alt=""> -->
       <svg id="svg1" width="20%" height="25%" style="position: absolute; bottom: 4%; left: 28%; z-index: 3003;">
-        <rect class="show" id="rect" x="0" y="0" width="90%" height="90%" stroke="green" stroke-width="0" fill="transparent" onclick="show()"  />
+        <rect class="show" id="rect" x="0" y="0" width="90%" height="90%" stroke="green" stroke-width="0" fill="transparent" onclick="showz()"  />
       </svg>
-      <div id="opacity"></div>
       <img id="image" src="assets/test-image1.jpg" alt="">
+      <div id="opacity"></div>
     </div>
     <div class="main-text">
       <div class="text" id="elem" style="bottom: 0;" hidden>
-        <h1 class="hide" id="hidden-text" onclick="hide()">&times;</h1>
+        <h1 class="hide" id="hidden-text" onclick="hidez()">&times;</h1>
         <p>Since the 2000s, track and field athletes at major competitions wear
           their names as well as their numbers on their bibs. Powerlifters wear a
           bib benchpress shirt across their chest area to help them lift more weight.
@@ -107,7 +107,8 @@
   <script src="index.js"></script>
 
   <script>
-  
+
+
   // Show text
   var elem = document.querySelector('#elem');
   document.addEventListener('click', function (event) {
@@ -120,7 +121,7 @@
   }, false);
 
 
-  function show() {
+  function showz() {
     document.getElementById("image").style.height = "300%";
     document.getElementById("image").style.top = "-200%";
     document.getElementById("image").style.left = "-65%";
@@ -136,7 +137,7 @@
     document.getElementById("rect").style.width = "200%";
     document.getElementById("rect").style.height = "100%";
   }
-  function hide() {
+  function hidez() {
     document.getElementById("image").style.height = "100%";
     document.getElementById("image").style.top = "0";
     document.getElementById("image").style.left = "0";

@@ -9,7 +9,7 @@ html, body {
   background-color: black;
   font-family: 'Source Sans Pro', sans-serif;
 
-  cursor: url("assets/cursor_text.png"), pointer !important;
+  /* cursor: url("assets/cursor_text.png"), pointer !important; */
 }
 
 p {
@@ -38,14 +38,14 @@ h1 {
 
 .loader-text {
   font-size: 13em;
-  animation: blinker 1s linear infinite;
+  /* animation: blinker 1s linear infinite; */
 }
 
-@keyframes blinker {
+/* @keyframes blinker {
   50% {
     opacity: 0;
   }
-}
+} */
 
 header {
   width: 100vw;
@@ -63,7 +63,7 @@ footer {
   padding: 0;
   position: absolute;
   bottom: 0;
-  z-index: 3000;
+  z-index: 3003;
 
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -107,21 +107,21 @@ footer {
 
   background-color: rgba(0, 0, 0, 0.8);
 
-  animation-name: blinker;
+  /* animation-name: blinker;
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-delay: 0s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 3; */
 }
 
-@keyframes blinker {
+/* @keyframes blinker {
   0% {
-    opacity: 1;
-  }
-  100% {
     opacity: 0;
   }
-}
+  100% {
+    opacity: 1;
+  }
+} */
 
 #image {
   position: absolute;
