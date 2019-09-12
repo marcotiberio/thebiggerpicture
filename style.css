@@ -12,6 +12,10 @@ html, body {
   /* cursor: url("assets/cursor_text.png"), pointer !important; */
 }
 
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+
 p {
   margin: 0;
   padding: 0;
@@ -21,6 +25,39 @@ h1 {
   margin: 0;
   padding-top: 8%;
 }
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  text-shadow: 1px 1px red;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+## Loader
+--------------------------------------------------------------*/
 
 #loader {
   position: absolute;
@@ -76,6 +113,20 @@ footer {
 
   display: grid;
   grid-template-columns: 1fr;
+}
+
+#elem {
+  font-size: 1.4em;
+}
+
+#elem-about {
+  bottom: 0;
+  font-size: 1em;
+}
+
+#elem-about {
+  bottom: 0;
+  font-size: 1em;
 }
 
 .main-container {
@@ -181,8 +232,6 @@ footer {
 
 .text {
   padding: 2% 3%;
-
-  font-size: 140%;
   text-align: right;
 }
 
@@ -212,12 +261,18 @@ svg:hover + img {
   z-index: 3000;
 }
 
+#hide-text:hover {
+  text-shadow: 2px 2px red;
+}
+
 #about-button:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  text-shadow: 1px 1px red;
 }
 
 #archive-button:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  text-shadow: 1px 1px red;
 }
 
 .caption {
@@ -225,6 +280,35 @@ svg:hover + img {
 }
 
 #caption-button:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  text-shadow: 1px 1px red;
   cursor: pointer;
+}
+
+#hide-caption {
+  text-shadow: 1px 1px red;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+## MOBILE
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## MOBILE
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## MOBILE
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1440px) {
+
+    #elem-about {
+      bottom: 0;
+      font-size: 1.2em;
+    }
+
+    #elem-caption {
+      bottom: 0;
+      font-size: 1.2em;
+    }
+
 }

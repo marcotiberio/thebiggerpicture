@@ -43,7 +43,7 @@
     <div class="about" id="about-menu">
       <div id="archive-button" style="text-align: right;">archive (coming soon)</div>
       <div class="show-about" id="about-button" style="text-align: right;">about</div>
-      <div class="show-caption" id="caption-button" style="text-align: right;">caption</div>
+      <!-- <div class="show-caption" id="caption-button" style="text-align: right;">caption</div> -->
     </div>
   </header>
 
@@ -59,7 +59,7 @@
     </div>
     <div class="main-text">
       <div class="text" id="elem" style="bottom: 0;" hidden>
-        <h1 class="hide" id="hidden-text" onclick="hide1()">&times;</h1>
+        <h1 class="hide" id="hide-text" onclick="hide1()">&times;</h1>
         <p>Since the 2000s, track and field athletes at major competitions wear
           their names as well as their numbers on their bibs. Powerlifters wear a
           bib benchpress shirt across their chest area to help them lift more weight.
@@ -67,18 +67,18 @@
           it can be determined who is within their allowed area.
         </p>
       </div>
-      <div class="text" id="elem-about" style="bottom: 0; font-size: 130%;" hidden>
+      <div class="text" id="elem-about" hidden>
         <p style="float: right;"><i>“We never approach an image with a blank mind but with a mind already primed with memories, knowledge, prejudices.”</i>
         <br>John A. Walker
         <br><br>
         The Bigger Picture is the photography blog where you can enjoy big photos, like you rarely find on the Web, and learn more about their contexts by zooming in on selected details of the photos and read facts, curious information, anecdotes about them.
         The Bigger Picture plays with the relationship between the picture and its bigger picture, and wants to make you stay more on a picture, engage with it, think about it.
         <br><br>
-        Curated by Mauro Bedoni, website developed by Defrost Studio.
+        Curated by <a href="http://www.maurobedoni.com/" target="_blank">Mauro Bedoni</a>, website developed by <a href="https://defrostudio.eu/" target="_blank">Defrost Studio</a>.
         </p>
       </div>
-      <div class="text" id="elem-caption" style="bottom: 0; font-size: 100%;" hidden>
-        <!-- <p class="hide" id="hide-caption">&times;</p> -->
+      <div class="text" id="elem-caption" hidden>
+        <p class="hide" id="hide-caption">&times;</p>
         <p style="float: right;">
           4×400 m relay race runners at the Track and Field Championship, Atlanta (USA), July 1st, 2018.
           <br>
@@ -93,9 +93,9 @@
       <!-- <button>Show</button> -->
       <!-- <button>Hide</button> -->
     </div>
-    <!-- <div class="caption" style="padding: 2% 4%;">
+    <div class="caption" style="padding: 2% 4%;">
       <div class="show-caption" id="caption-button" style="text-align: right;">caption</div>
-    </div> -->
+    </div>
   </footer>
 
   <script src="index.js"></script>
@@ -135,6 +135,7 @@
     document.getElementById("rect").style.y = "0";
     document.getElementById("rect").style.width = "200%";
     document.getElementById("rect").style.height = "100%";
+    document.getElementById("about-menu").style.display = "none";
   }
   function hide1() {
     document.getElementById("image").style.height = "100%";
@@ -161,14 +162,40 @@
   $(document).ready(function(){
     $("#about-button").click(function(){
       $("#elem-about").toggle();
-      $("#elem-caption").hide();
+      $("#caption-button").toggle();
+    });
+  });
+
+  // $(document).ready(function(){
+  //   $("#caption-button").click(function(){
+  //     $("#elem-caption").toggle();
+  //     $("#elem-about").hide();
+  //   });
+  // });
+
+  $(document).ready(function(){
+    $("#caption-button").click(function(){
+      $("#elem-caption").show();
     });
   });
 
   $(document).ready(function(){
     $("#caption-button").click(function(){
-      $("#elem-caption").toggle();
-      $("#elem-about").hide();
+      $("#elem-caption").show();
+      $("#caption-button").hide();
+    });
+    $("#hide-caption").click(function(){
+      $("#elem-caption").hide();
+      $("#caption-button").show();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#rect").click(function(){
+      $("#about-menu").hide();
+    });
+    $("#hide-text").click(function(){
+      $("#about-menu").show();
     });
   });
 
