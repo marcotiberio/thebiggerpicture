@@ -68,6 +68,7 @@
         </p>
       </div>
       <div class="text" id="elem-about" hidden>
+        <h1 class="hide" id="hide-about">&times;</h1>
         <p style="float: right;"><i>“We never approach an image with a blank mind but with a mind already primed with memories, knowledge, prejudices.”</i>
         <br>John A. Walker
         <br><br>
@@ -173,9 +174,20 @@
   //   });
   // });
 
+  // $(document).ready(function(){
+  //   $("#caption-button").click(function(){
+  //     $("#elem-caption").show();
+  //   });
+  // });
+
   $(document).ready(function(){
-    $("#caption-button").click(function(){
-      $("#elem-caption").show();
+    $("#about-button").click(function(){
+      $("#elem-about").show();
+      $("#caption-button").hide();
+    });
+    $("#hide-about").click(function(){
+      $("#elem-about").hide();
+      $("#caption-button").show();
     });
   });
 

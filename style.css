@@ -262,17 +262,27 @@ svg:hover + img {
 }
 
 #hide-text:hover {
-  text-shadow: 2px 2px red;
+  text-decoration: underline;
+  /* text-shadow: 2px 2px red; */
 }
 
 #about-button:hover {
-  /* text-decoration: underline; */
-  text-shadow: 1px 1px red;
+  text-decoration: underline;
+  /* text-shadow: 1px 1px red; */
+}
+
+#about-button:hover {
+  text-decoration: underline;
+  /* text-shadow: 1px 1px red; */
+}
+
+#hide-about:hover {
+  text-decoration: underline;
 }
 
 #archive-button:hover {
-  /* text-decoration: underline; */
-  text-shadow: 1px 1px red;
+  text-decoration: underline;
+  /* text-shadow: 1px 1px red; */
 }
 
 .caption {
@@ -280,13 +290,14 @@ svg:hover + img {
 }
 
 #caption-button:hover {
-  /* text-decoration: underline; */
-  text-shadow: 1px 1px red;
+  text-decoration: underline;
+  /* text-shadow: 1px 1px red; */
   cursor: pointer;
 }
 
-#hide-caption {
-  text-shadow: 1px 1px red;
+#hide-caption:hover {
+  text-decoration: underline;
+  /* text-shadow: 1px 1px red; */
   cursor: pointer;
 }
 
