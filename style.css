@@ -12,6 +12,56 @@ html, body {
   /* cursor: url("assets/cursor_text.png"), pointer !important; */
 }
 
+
+.blink-container {
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+
+  z-index: 200000;
+}
+
+#blink1 {
+  bottom: 60%;    /*change this*/
+  left: 43%;  /*change this*/
+}
+
+#blink2 {
+  bottom: 63%;    /*change this*/
+  left: 33%;  /*change this*/
+}
+
+#blink3 {
+  bottom: 40%;    /*change this*/
+  left: 20%;  /*change this*/
+}
+
+/* .blink-dot {
+  border-radius: 50%;
+  background-color: #0091D7;
+  width: 10px;
+  height: 10px;
+} */
+
+.blink-pulse {
+  background-color: #0091D7;
+  opacity: 0.75;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: scale(1);
+  animation: blink-pulse-anim 1s infinite;
+  -webkit-animation-iteration-count: 5;
+}
+
+@keyframes blink-pulse-anim {
+  0% { opacity: 0.75; transform: scale(1)}
+  100% { opacity: 0; transform: scale(4)}
+  0% { opacity: 0.75; transform: scale(1)}
+}
+
 /*--------------------------------------------------------------
 ## Typography
 --------------------------------------------------------------*/
@@ -224,6 +274,7 @@ footer {
   text-shadow: 2px 2px black;
 
   z-index: 3005;
+  mix-blend-mode: difference;
 }
 
 .main-text:hover {
@@ -235,9 +286,9 @@ footer {
   text-align: right;
 }
 
-svg:hover + img {
+/* svg:hover + img {
   filter: brightness(20%);
-}
+} */
 
 #rect {
   border: 5px solid blue;
