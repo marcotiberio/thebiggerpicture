@@ -1,81 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html>
 <head>
+
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The Bigger Picture</title>
-
-  <link rel="shortcut icon" type="image/x-icon" href="#">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
-
-
-  <script src="jquery-3.4.1.min.js"></script>
-
-
-  <!-- STYLESHEETS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
-  	<link rel="stylesheet" type="text/css" href="examples.css" /> -->
 
-  <!-- TYPOGRAPHY -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/41ebb0a60a.js"></script>
-
-  <!-- BOOTSTRAP -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Archivo:400,400i,500,600,700|Lusitana:400,700|Padauk:400,700&display=swap" rel="stylesheet">
 
 </head>
 
-
 <body>
 
-  <!-- <div id="loader">
+  <div id="loader">
     <h1 class="loader-text">THE BIGGER<br>PICTURE</h1>
-  </div> -->
+  </div>
 
   <header>
-    <div style="padding: 0.5%;">
-      <!-- <button>Show</button> -->
-      <!-- <button>Hide</button> -->
-    </div>
-    <div class="about" id="about-menu">
-      <div id="archive-button" style="text-align: right;">archive (coming soon)</div>
-      <div class="show-about" id="about-button" style="text-align: right;">about</div>
-      <!-- <div class="show-caption" id="caption-button" style="text-align: right;">caption</div> -->
-    </div>
+    <div data-toggle="modal" data-target="#aboutModal"><p id="button-about">ABOUT</p></div>
+    <div style="text-align: right;"><p id="button-archive">ARCHIVE (COMING SOON)</p></div>
   </header>
 
-  <section class="main-container">
-    <div class="main-image">
-      <!-- <img id="image-focus1" src="assets/pettorina111.png" alt=""> -->
-      <!-- <img id="image-focus2" src="assets/testimone.png" alt=""> -->
-      <div class="blink-container" id="blink1">
-        <div class="blink-pulse"></div>
-      </div>
-      <div class="blink-container" id="blink2">
-        <div class="blink-pulse"></div>
-      </div>
-      <div class="blink-container" id="blink3">
-        <div class="blink-pulse"></div>
-      </div>
-      <svg class="zoomTarget" id="svg1" width="8%" height="25%" style="position: absolute; bottom: 48%; left: 39%; z-index: 3004;">
-        <rect class="show" id="rect" x="0" y="0" width="90%" height="90%" stroke="green" stroke-width="0" fill="transparent" onclick="show1()" />
-      </svg>
+  <section></section> <!-- background -->
 
-      <!-- <svg class="zoomTarget" id="svg1" width="15%" height="25%" style="position: absolute; bottom: 48%; left: 25%; z-index: 3004;">
-        <rect class="show" id="rect1" x="0" y="0" width="90%" height="90%" stroke="red" stroke-width="5" fill="transparent" onclick="show1()" />
-      </svg> -->
-      <img id="image" src="assets/test photo/Abdul_Waled_exp_final.jpg" alt="">
-      <!-- <div id="opacity"></div> -->
+  <div class="container">
+    <div class="entry" id="entry1">.</div>
+    <div class="entry" id="entry2">.</div>
+    <div class="entry" id="entry3">.</div>
+    <div class="blink-container" id="blink1">
+      <div class="blink-pulse"></div>
     </div>
-    <div class="main-text">
-      <div class="text" id="elem" style="bottom: 0;" hidden>
-        <h1 class="hide" id="hide-text" onclick="hide1()">&times;</h1>
-        <p>
-          <i>Abdul, 42, farmer</i>
+    <div class="blink-container" id="blink2">
+      <div class="blink-pulse"></div>
+    </div>
+    <div class="blink-container" id="blink3">
+      <div class="blink-pulse"></div>
+    </div>
+      <!-- <img id="imgVedelago" src="assets/vedelago.jpg"> -->
+      <p id="text1">
+        <u>Abdul, 42, farmer</u>
           <br>
           Abdul had only ever used his Dodge Ram Turbo Diesel to transport crops,
           sheep and goats before he decided to convert it into a gilla (or Technical)– an
@@ -83,160 +48,83 @@
           Abdul was ready to head for the front line, where he is on duty for 12 hours at a time.
           “When I am on the front line I am not scared; I am only scared of Allah. In
           the future I dream of being free, and then we will see about the rest.”
-        </p>
-      </div>
-      <div class="text" id="elem" style="bottom: 0;" hidden>
-        <h1 class="hide" id="hide-text" onclick="hide1()">&times;</h1>
-        <p>Lorem.
-        </p>
-      </div>
-      <div class="text" id="elem-about" hidden>
-        <h1 class="hide" id="hide-about">&times;</h1>
-        <p style="float: right;"><i>“We never approach an image with a blank mind but with a mind already primed with memories, knowledge, prejudices.”</i>
-          <br>John A. Walker
-          <br><br>
-          The Bigger Picture is the photography blog where you can enjoy big photos, like you rarely find on the Web, and learn more about their contexts by zooming in on selected details of the photos and read facts, curious information, anecdotes
-          about them.
-          The Bigger Picture plays with the relationship between the picture and its bigger picture, and wants to make you stay more on a picture, engage with it, think about it.
-          <br><br>
-          Curated by <a href="http://www.maurobedoni.com/" target="_blank">Mauro Bedoni</a>, website developed by <a href="https://defrostudio.eu/" target="_blank">Defrost Studio</a>.
-        </p>
-      </div>
-      <div class="text" id="elem-caption" hidden>
-        <p class="hide" id="hide-caption">&times;</p>
-        <p style="float: right;">
-          4×400 m relay race runners at the Track and Field Championship, Atlanta (USA), July 1st, 2018.
+      </p>
+      <!-- <img id="gifVedelago1" src="assets/test-photo/rocket-gif.gif"> -->
+      <p id="text2">
+        <u>UB-32 57MM Rocket Pod</u>
           <br>
-          @ Paul Sandford/IAAF
-        </p>
-      </div>
-    </div>
-  </section>
+          Originally attached to Soviet Mi-24 helicopters, this pod can be attached
+          to a Technical and still fire its 32 rockets, although there is no way to aim
+          them effectively. Their already low accuracy is further diminished when firing
+          from an improvised platform in an unintended role. Therefore, such systems
+          proved little more than curiosities in regular armies.
+      </p>
+      <img id="gif2" src="assets/test-photo/rocket-gif.gif">
+      <p id="text3">
+        <u>Dodge Ram Turbo Diesel pick-up (gilla, or Technical)</u>
+          <br>
+          From afghanistan to Sudan to Libya, the Toyota Hilux pick-up is the favored vehicle
+          for making Technicals. In the 1987 Libya-Chad war, Chadian Technical drivers
+          discovered that if a Hilux is driven through a minefield at over 100 kilometers
+          an hour, it won’t detonate the mines. And the open-back is perfect for all sorts of weaponry.
+      </p>
+      <p id="text-about">
+          “We never approach an image with a blank mind but with a mind already primed
+          with memories, knowledge, prejudices.”
+          John A. Walker
+          <br><br>
+          The Bigger Picture is the photography blog where you can enjoy big photos,
+          like you rarely find on the Web, and learn more about their contexts by zooming
+          in on selected details of the photos and read facts, curious information, anecdotes
+          about them. The Bigger Picture plays with the relationship between the picture and its
+          bigger picture, and wants to make you stay more on a picture, engage with it, think about it.
+          <br><br>
+          Curated by Mauro Bedoni, website developed by Defrost Studio.
+      </p>
+      <p id="text-caption">
+          Abdul, 42, farmer, coming back from the frontline with Waled in his modified
+          pick-up truck near Ajdabiya, Libya. June 1, 2011.
+          <br><br>
+          On February 15, 2011, Libyans began to protest against Qaddafi’s 41-year-old
+          dictatorship. Qaddafi’s response was to send his army to attack the protesters.
+          In response the civilian population began to arm itself and fight back.
+          <br>
+          "In May when Qaddafi had gone into hiding, I travelled with an assistant
+          to photograph the trucks. We set-up the camera at the last check point, on the
+          road to the front line, where my assistant ran out to stop them, before they went
+          into battle."
+          <br><br>
+          James Mollison
+      </p>
+  </div>
+
 
   <footer>
-    <div>
-      <!-- <button>Show</button> -->
-      <!-- <button>Hide</button> -->
-    </div>
-    <div class="caption" style="padding: 2% 4%;">
-      <div class="show-caption" id="caption-button" style="text-align: right;">caption</div>
-    </div>
+    <div></div>
+    <div style="text-align: right;"><i id="button-caption">CAPTION<i></div>
   </footer>
 
-  <script src="index.js"></script>
-  <!-- <script src="image-fading.js"></script> -->
-  <!-- <script src="jquery.zoomooz.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="zoom.js"></script>
 
 
   <script>
-    // Show text
-    var elem = document.querySelector('#elem');
-    document.addEventListener('click', function(event) {
-      if (event.target.matches('.show')) {
-        elem.removeAttribute('hidden');
-      }
-      if (event.target.matches('.hide')) {
-        elem.setAttribute('hidden', 'true');
-      }
-    }, false);
+
+	$("#entry1").hover( function() { $("#text1").toggle(); } );
+
+  $("#entry2").hover( function() { $("#text2").toggle(); } );
+  $("#entry2").hover( function() { $("#gif2").toggle(); } );
+
+  $("#entry3").hover( function() { $("#text3").toggle(); } );
 
 
-    function show1() {
-      document.getElementById("image").style.height = "300%";
-      document.getElementById("image").style.top = "-70%";
-      document.getElementById("image").style.left = "-70%";
-      // document.getElementById("image").style.filter = "brightness(20%)";
-      document.getElementById("image-focus1").style.height = "300%";
-      document.getElementById("image-focus1").style.top = "-200%";
-      document.getElementById("image-focus1").style.left = "-65%";
-      document.getElementById("image-focus2").style.height = "300%";
-      document.getElementById("image-focus2").style.top = "-200%";
-      document.getElementById("image-focus2").style.left = "-65%";
-      document.getElementById("svg1").style.bottom = "0";
-      document.getElementById("svg1").style.left = "0";
-      document.getElementById("svg1").style.width = "100%";
-      document.getElementById("svg1").style.height = "100%";
-      document.getElementById("rect").style.x = "0";
-      document.getElementById("rect").style.y = "0";
-      document.getElementById("rect").style.width = "200%";
-      document.getElementById("rect").style.height = "100%";
-      document.getElementById("about-menu").style.display = "none";
-    }
-
-    function hide1() {
-      document.getElementById("image").style.height = "100%";
-      document.getElementById("image").style.top = "0";
-      document.getElementById("image").style.left = "0";
-      // document.getElementById("image").style.filter = "brightness(100%)";
-      document.getElementById("image-focus1").style.height = "100%";
-      document.getElementById("image-focus1").style.top = "0";
-      document.getElementById("image-focus1").style.left = "0";
-      document.getElementById("image-focus2").style.height = "100%";
-      document.getElementById("image-focus2").style.top = "0";
-      document.getElementById("image-focus2").style.left = "0";
-      document.getElementById("svg1").style.bottom = "4%";
-      document.getElementById("svg1").style.left = "28%";
-      document.getElementById("svg1").style.width = "20%";
-      document.getElementById("svg1").style.height = "25%";
-      document.getElementById("rect").style.x = "0";
-      document.getElementById("rect").style.y = "0";
-      document.getElementById("rect").style.width = "90%";
-      document.getElementById("rect").style.height = "90%";
-    }
+  $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
+  $("#button-about").hover( function() { $("#text-about").toggle(); } );
 
 
-    $(document).ready(function() {
-      $("#about-button").click(function() {
-        $("#elem-about").toggle();
-        $("#caption-button").toggle();
-      });
-    });
-
-    // $(document).ready(function(){
-    //   $("#caption-button").click(function(){
-    //     $("#elem-caption").toggle();
-    //     $("#elem-about").hide();
-    //   });
-    // });
-
-    // $(document).ready(function(){
-    //   $("#caption-button").click(function(){
-    //     $("#elem-caption").show();
-    //   });
-    // });
-
-    $(document).ready(function() {
-      $("#about-button").click(function() {
-        $("#elem-about").show();
-        $("#caption-button").hide();
-      });
-      $("#hide-about").click(function() {
-        $("#elem-about").hide();
-        $("#caption-button").show();
-      });
-    });
-
-    $(document).ready(function() {
-      $("#caption-button").click(function() {
-        $("#elem-caption").show();
-        $("#caption-button").hide();
-      });
-      $("#hide-caption").click(function() {
-        $("#elem-caption").hide();
-        $("#caption-button").show();
-      });
-    });
-
-    $(document).ready(function() {
-      $("#rect").click(function() {
-        $("#about-menu").hide();
-      });
-      $("#hide-text").click(function() {
-        $("#about-menu").show();
-      });
-    });
-
-    $(function() {
+  // LOADER
+  $(function() {
       // setTimeout() function will be fired after page is loaded
       // it will wait for 5 sec. and then will fire
       // $("#successMessage").hide() function
@@ -244,9 +132,15 @@
         $("#loader").fadeOut()
       }, 2000);
     });
+
+
+    // ZOOM
+		document.querySelector( '.container' ).addEventListener( 'click', function( event ) {
+			event.preventDefault();
+			zoom.to({ element: event.target });
+		} );
+
   </script>
 
 
 </body>
-
-</html>
