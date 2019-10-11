@@ -237,7 +237,7 @@ section {
 }
 
 #text2 {
-  position: absolute;
+  position: fixed;
   width: 40%;
   top: 60%;
   right: 3%;
@@ -336,15 +336,15 @@ footer {
 
   padding: 1%;
   z-index: 101;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: black;
   display: none;
 
   border: 5px solid black;
-  -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);
 
   background-color: #f4f4f4;
 }
