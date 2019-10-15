@@ -189,7 +189,7 @@ section {
 } */
 
 /*--------------------------------------------------------------
-## Main Container
+## Entries
 --------------------------------------------------------------*/
 
 #entry1 {
@@ -211,7 +211,7 @@ section {
 }
 
 #entry1:hover {
-  cursor: url("assets/cursor_text_50px.png"), zoom-in !important;
+  cursor: url("assets/cursor_text.png"), zoom-in !important;
   /* cursor: zoom-in; */
 }
 
@@ -234,13 +234,13 @@ section {
 }
 
 #entry2:hover {
-  cursor: url("assets/cursor_text_50px.png"), zoom-in !important;
+  cursor: url("assets/cursor_text.png"), zoom-in !important;
   /* cursor: zoom-in; */
 }
 
 #entry3 {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 9%;
   color: transparent;
   font-weight: 800;
@@ -251,20 +251,24 @@ section {
 
   /* border: 5px solid green; */
   width: 35%;
-  height: 30%;
+  height: 40%;
 
   z-index: 2001;
 }
 
 #entry3:hover {
-  cursor: url("assets/cursor_text_50px.png"), zoom-in !important;
+  cursor: url("assets/cursor_text.png"), zoom-in !important;
   /* cursor: zoom-in; */
 }
 
+/*--------------------------------------------------------------
+## Texts
+--------------------------------------------------------------*/
+
 #text1 {
   position: absolute;
-  width: 35%;
-  top: 10%;
+  width: 50%;
+  bottom: 5%;
   left: 3%;
 
   padding: 1%;
