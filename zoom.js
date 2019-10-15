@@ -7,7 +7,7 @@
  */
 var zoom = (function(){
 
-	var TRANSITION_DURATION = 600;
+	var TRANSITION_DURATION = 1500;
 
 	// The current zoom level (scale)
 	var level = 1;
