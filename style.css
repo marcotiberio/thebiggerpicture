@@ -96,11 +96,11 @@ p {
   height: 50px;
   position: absolute;
   transform: scale(1);
-  /* animation: blink-pulse-anim 2s infinite; */
-  -webkit-animation-name: blink-pulse-anim;
+  animation: blink-pulse-anim 2s infinite;
+  /* -webkit-animation-name: blink-pulse-anim;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out; */
   -webkit-animation-iteration-count: 5;
 }
 
