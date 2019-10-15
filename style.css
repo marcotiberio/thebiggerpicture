@@ -213,7 +213,8 @@ section {
 }
 
 #entry2:hover {
-  cursor: zoom-in;
+  cursor: url("assets/cursor_text_76px.png"), zoom-in !important;
+  /* cursor: zoom-in; */
 }
 
 #entry3 {
