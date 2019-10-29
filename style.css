@@ -234,7 +234,7 @@ section {
 }
 
 #entry2:hover {
-  cursor: url("assets/cursor_text.png"), zoom-in !important;
+  cursor: url("assets/cursor_text.png") 25 15, zoom-in !important;
   /* cursor: zoom-in; */
 }
 
@@ -257,7 +257,7 @@ section {
 }
 
 #entry3:hover {
-  cursor: url("assets/cursor_text.png"), zoom-in !important;
+  cursor: url("assets/cursor_text.png") 25 15, zoom-in !important;
   /* cursor: zoom-in; */
 }
 
